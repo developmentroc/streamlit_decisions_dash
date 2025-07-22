@@ -1,0 +1,86 @@
+<html>
+    <div class="dashboard">
+      <h1>🧠 Decision Intelligence Dashboard</h1>
+      <p>Are we making the right decisions, fast enough, with the right inputs?</p>
+  
+      <section class="metrics">
+        <div class="metric">Total Decisions: 5</div>
+        <div class="metric">Avg Time to Outcome: 6.2 days</div>
+        <div class="metric">Effective Rate: 60%</div>
+        <div class="metric">Repeatable Wins: 3 ⭐</div>
+      </section>
+  
+      <section class="star-section">
+        <h2>🌟 STAR Decisions (High Impact)</h2>
+        <table>
+          <thead><tr><th>ID</th><th>Owner</th><th>Goal</th><th>Result</th></tr></thead>
+          <tbody>
+            <tr><td>D001</td><td>Maria G.</td><td>Lower ASA</td><td>ASA dropped from 42s to 28s</td></tr>
+            <tr><td>D004</td><td>Carlos V.</td><td>Improve Patient Experience</td><td>Survey scores improved</td></tr>
+          </tbody>
+        </table>
+      </section>
+  
+      <section class="log-section">
+        <h2>📋 All Decisions Logged</h2>
+        <ul>
+          <li>D001 - Maria G. - ✅ Effective - Call volume trend, shift overlap data</li>
+          <li>D002 - James K. - ⚠️ Somewhat Effective - Referral approval logs</li>
+          <li>D003 - Linda T. - ❌ Not Effective - Anecdotal staff complaints</li>
+          <li>D004 - Carlos V. - ✅ Effective - Patient survey comments</li>
+          <li>D005 - Maria G. - ✅ Effective - Top 10 call reasons analysis</li>
+        </ul>
+      </section>
+  
+      <section class="owner-performance">
+        <h2>🧑‍💼 Owner Performance Overview</h2>
+        <table>
+          <thead><tr><th>Owner</th><th>Decisions Made</th><th>% Effective</th><th>Avg Time to Outcome</th></tr></thead>
+          <tbody>
+            <tr><td>Maria G.</td><td>2</td><td>100%</td><td>3.5</td></tr>
+            <tr><td>James K.</td><td>1</td><td>0%</td><td>7</td></tr>
+            <tr><td>Linda T.</td><td>1</td><td>0%</td><td>12</td></tr>
+            <tr><td>Carlos V.</td><td>1</td><td>100%</td><td>5</td></tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </html>
+  
+  <script>
+  export default {
+    name: "DecisionDashboardMockup"
+  };
+  </script>
+  
+  <style scoped>
+  .dashboard {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  .metrics {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  .metric {
+    background: #79ADDC;
+    padding: 10px 15px;
+    border-radius: 6px;
+  }
+  .star-section, .log-section, .owner-performance {
+    margin-top: 30px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  table, th, td {
+    border: 1px solid #ccc;
+  }
+  th, td {
+    padding: 8px;
+    text-align: left;
+  }
+  </style>
