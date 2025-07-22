@@ -5,7 +5,7 @@ import streamlit.components.v1 as components
 
 
 def main():
-    st.title("📄 Embedded HTML Example")
+    st.title("🧠 Decision Intelligence Dashboard")
 
     with open("index.html", "r", encoding='utf-8') as f:
         html_str = f.read()
